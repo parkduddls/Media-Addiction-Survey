@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인터넷 중독 자가진단 설문</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>인터넷 중독 자가진단 설문</h1>
+        <form id="surveyForm">
+            <!-- 반복되는 질문 -->
+            <div class="question">
+                <label>1. 미디어가 없다면 내 인생에 재미있는 일이 하나도 없을 것 같다.</label>
+                <input type="radio" name="q1" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q1" value="1"> 그렇지 않다
+                <input type="radio" name="q1" value="2"> 그렇다
+                <input type="radio" name="q1" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>2. 실제 생활에서도 미디어에서 하는 것처럼 해보고 싶다.</label>
+                <input type="radio" name="q2" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q2" value="1"> 그렇지 않다
+                <input type="radio" name="q2" value="2"> 그렇다
+                <input type="radio" name="q2" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>3. 미디어를 하지 못하면 무슨 일이 있어났는지 궁금해서 다른 일을 할 수가 없다.</label>
+                <input type="radio" name="q3" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q3" value="1"> 그렇지 않다
+                <input type="radio" name="q3" value="2"> 그렇다
+                <input type="radio" name="q3" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>4. 사이버 세상과 현실이 혼동될 때가 있다.</label>
+                <input type="radio" name="q4" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q4" value="1"> 그렇지 않다
+                <input type="radio" name="q4" value="2"> 그렇다
+                <input type="radio" name="q4" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>5. 미디어를 할 때 마음대로 되지 않으면 짜증이 난다.</label>
+                <input type="radio" name="q5" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q5" value="1"> 그렇지 않다
+                <input type="radio" name="q5" value="2"> 그렇다
+                <input type="radio" name="q5" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>6. 미디어를 하지 못하면 안절부절 못하고 초조해진다.</label>
+                <input type="radio" name="q6" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q6" value="1"> 그렇지 않다
+                <input type="radio" name="q6" value="2"> 그렇다
+                <input type="radio" name="q6" value="3"> 매우 그렇다
+            </div>
+            
+            <div class="question">
+                <label>7. 미디어를 하는 동안 더욱 자신감이 생긴다.	</label>
+                <input type="radio" name="q7" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q7" value="1"> 그렇지 않다
+                <input type="radio" name="q7" value="2"> 그렇다
+                <input type="radio" name="q7" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>8. 일상에서 골치 아픈 생각을 잊기 위해 미디어를 하게 된다.</label>
+                <input type="radio" name="q8" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q8" value="1"> 그렇지 않다
+                <input type="radio" name="q8" value="2"> 그렇다
+                <input type="radio" name="q8" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>9. 미디어를 하면 기분이 좋아지고 쉽게 흥분한다.</label>
+                <input type="radio" name="q9" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q9" value="1"> 그렇지 않다
+                <input type="radio" name="q9" value="2"> 그렇다
+                <input type="radio" name="q9" value="3"> 매우 그렇다
+            </div>
+            
+            <div class="question">
+                <label>10. 미디어를 하면 스트레스가 해소되는 것 같다.</label>
+                <input type="radio" name="q10" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q10" value="1"> 그렇지 않다
+                <input type="radio" name="q10" value="2"> 그렇다
+                <input type="radio" name="q10" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>11. “그만 해야지” 하면서도 번번이 미디어를 계속하게 된다.</label>
+                <input type="radio" name="q11" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q11" value="1"> 그렇지 않다
+                <input type="radio" name="q11" value="2"> 그렇다
+                <input type="radio" name="q11" value="3"> 매우 그렇다
+            </div>
+        
+            <div class="question">
+                <label>12. 일상 대화도 미디어와 관련되어 있다.</label>
+                <input type="radio" name="q12" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q12" value="1"> 그렇지 않다
+                <input type="radio" name="q12" value="2"> 그렇다
+                <input type="radio" name="q12" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>13. 해야 할 일을 시작하기 전에 미디어부터 하게 된다.</label>
+                <input type="radio" name="q13" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q13" value="1"> 그렇지 않다
+                <input type="radio" name="q13" value="2"> 그렇다
+                <input type="radio" name="q13" value="3"> 매우 그렇다
+            </div>
+            
+            <div class="question">
+                <label>14. 일단 미디어를 시작하면 처음에 마음먹었던 것보다 오랜 시간 하게된다.</label>
+                <input type="radio" name="q14" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q14" value="1"> 그렇지 않다
+                <input type="radio" name="q14" value="2"> 그렇다
+                <input type="radio" name="q14" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>15. 미디어 인터넷 속도가 느려지면 금방 답답하고 못 견딜 것 같은 기분이 든다.		</label>
+                <input type="radio" name="q15" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q15" value="1"> 그렇지 않다
+                <input type="radio" name="q15" value="2"> 그렇다
+                <input type="radio" name="q15" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>16. 미디어를 하느라 다른 활동이나 TV에 대한 흥미가 감소했다.</label>
+                <input type="radio" name="q16" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q16" value="1"> 그렇지 않다
+                <input type="radio" name="q16" value="2"> 그렇다
+                <input type="radio" name="q16" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>17. 미디어를 하면서도 죄책감을 느낄 때가 있다.</label>
+                <input type="radio" name="q17" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q17" value="1"> 그렇지 않다
+                <input type="radio" name="q17" value="2"> 그렇다
+                <input type="radio" name="q17" value="3"> 매우 그렇다
+            </div>
+            
+            <div class="question">
+                <label>18. 지나치게 미디어에 몰두해 있는 나 자신이 한심하게 느껴질 때가 있다.</label>
+                <input type="radio" name="q18" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q18" value="1"> 그렇지 않다
+                <input type="radio" name="q18" value="2"> 그렇다
+                <input type="radio" name="q18" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>19. 미디어 사용을 줄여야 한다는 생각을 끊임없이 한다</label>
+                <input type="radio" name="q19" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q19" value="1"> 그렇지 않다
+                <input type="radio" name="q19" value="2"> 그렇다
+                <input type="radio" name="q19" value="3"> 매우 그렇다
+            </div>
+
+            <div class="question">
+                <label>20. 내가 생각해도 나는 미디어에 중독된 것 같다.</label>
+                <input type="radio" name="q20" value="0"> 전혀 그렇지 않다
+                <input type="radio" name="q20" value="1"> 그렇지 않다
+                <input type="radio" name="q20" value="2"> 그렇다
+                <input type="radio" name="q20" value="3"> 매우 그렇다
+            </div>
+
+
+
+            <!-- 추가 질문들 동일하게 작성 -->
+
+            <button type="button" class="submit-btn" onclick="calculateScore()">제출</button>
+        </form>
+    </div>
+
+    <script>
+        function calculateScore() {
+            var form = document.forms["surveyForm"];
+            var score = 0;
+
+            // 각 질문의 라디오 버튼 값 합산
+            for (var i = 1; i <= 20; i++) {
+                var question = form["q" + i];
+                var answered = false;
+                for (var j = 0; j < question.length; j++) {
+                    if (question[j].checked) {
+                        score += parseInt(question[j].value);
+                        answered = true;
+                        break;
+                    }
+                }
+
+                if (!answered) {
+                    alert(i + "번째 질문에 답해주세요.");
+                    return; // 답변이 없을 경우 종료
+                }
+            }
+
+            // 결과 계산
+            var result;
+            if (score <= 42) {
+                result = "일반사용자 B군: 인터넷 사용이 적절히 조절되고 있습니다.";
+            } else if (score <= 53) {
+                result = "일반사용자 A군: 잠재적인 인터넷 사용 문제가 있을 수 있습니다.";
+            } else if (score <= 66) {
+                result = "잠재적 위험 사용자군: 인터넷 사용에 주의가 필요합니다.";
+            } else {
+                result = "고위험 사용자군: 인터넷 중독이 의심되며, 전문가의 도움이 필요합니다.";
+            }
+
+            // 점수 및 결과 출력
+            alert("당신의 점수: " + score + "\n" + result);
+        }
+    </script>
+</body>
+</html>
+
